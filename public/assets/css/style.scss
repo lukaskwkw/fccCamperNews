@@ -1,0 +1,70 @@
+.item {
+	// display: inline-block;
+}
+
+.red--hearth {
+	color:red;
+}
+
+.media-head{
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.media-left{
+ background-image: url("https://placehold.it/64x64");
+ height: 64px;
+ width: 64px;
+ float: left;
+ border-radius: 50%;
+}
+
+.media-headline{
+	font-family: Copperplate;
+	height: 64px;
+	overflow: hidden;
+}
+
+.media-byline {
+	border: 1px dashed black;
+	border-radius: 5px;
+}
+.media-byline__time{
+	font-family: impact;
+	font-weight: bold;
+
+}
+.media-byline__author{
+	font-family: 'Lucida Console';
+	font-style: italic;
+	font-weight: bold;
+	// margin-left: 20px;
+}
+
+.description {
+	margin-top: 5px;
+	font-family: Georgia, Serif;
+	max-height: 100px;
+	overflow-y: scroll;
+}
+
+
+html {
+	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+*, 
+*:after,
+*:before {
+	box-sizing: inherit;
+}

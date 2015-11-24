@@ -2,12 +2,16 @@
   margin-top: 50px; }
 
 .red--hearth {
-  color: red; }
+  color: red; 
+  font-size: 30px;
+}
 
 .media-head {
   border: 1px solid black;
   border-radius: 12px 2px 2px 3px;
-  background-color: MediumSeaGreen; }
+  background-color: rgb(255, 255, 255); 
+  /* background-image: url("https://cdn-images-1.medium.com/max/800/1*_RzIXapqnP4ZZ9twx5_KSg.jpeg"); */
+}
 
 .cssload-container {
   position: absolute;
@@ -18,48 +22,66 @@
   background-image: url("https://placehold.it/48x48");
   background-size: cover;
   border-radius: 50%;
-  margin-top: 1em;
-  margin-left: 1em;
+  margin-top: 2em;
+  margin-left: .5em;
+  margin-right: .5em;
   height: 48px;
   width: 48px;
   float: left; }
 
 .media-headline {
-  font-family: Copperplate;
-  height: 64px;
+  /* font-family: Copperplate; */
+  /* height: inherit; */
+  /* max-height: 128px; */
   overflow: hidden;
-  margin-left: 5em; }
+  padding: auto;
+  padding: 10px;
+  /* margin-left: 9em; */ 
+  margin-top: 1.5em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* color: white; */
+  /* background-color: white; */
+  border-radius: 10em;
+}
 
 .media-byline {
   border: 1px dashed black;
   border-radius: 5px;
-  background-color: #297a4d; }
+  /* display: table-row-group; */
+  background-color: #AFAFAF; }
 
 .media-byline__time {
   font-family: impact;
   font-weight: bold;
-  color: white; }
+  color: black; }
 
 .media-byline__author {
   font-family: 'Lucida Console';
   font-style: italic;
   font-weight: bold;
-  color: #e6e6e6; }
+  color: #000000; }
 
 .description {
   margin-top: 5px;
   font-family: Georgia, Serif;
   max-height: 100px;
-  overflow-y: scroll; }
+  overflow-y: scroll; 
+  display: none;
+}
 
 body {
-  font-size: 12px; }
+  /* font-size: 12px; */ 
+  background-color: #457E86;
+}
   @media screen and (max-width: 1200px) and (min-width: 992px) {
     body {
       font-size: 10px; } }
   @media screen and (max-width: 991px) and (min-width: 768px) {
     body {
-      font-size: 7px; } }
+      /* font-size: 7px; */ } }
   @media screen and (max-width: 768px) {
     body {
       font-size: 14px; } }

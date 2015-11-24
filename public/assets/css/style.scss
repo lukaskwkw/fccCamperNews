@@ -1,5 +1,10 @@
+
 .item {
 	// display: inline-block;
+}
+
+.container {
+	margin-top: 50px;
 }
 
 .red--hearth {
@@ -8,37 +13,56 @@
 
 .media-head{
 	border: 1px solid black;
-	border-radius: 2px;
+	border-radius: 12px 2px 2px 3px;
+	background-color: MediumSeaGreen;
+}
+.cssload-container
+{
+	// overflow:hidden;
+	position: absolute;
+	left: 32px;
+	top: 12px;
+}
+.media-left{
+ background-image: url("https://placehold.it/48x48");
+ background-size: cover;
+ border-radius: 50%;
+ margin-top: 1em;
+ margin-left: 1em;
+ height: 48px;
+ width: 48px;
+ float: left;
+ // display: none;
+
 }
 
-.media-left{
- background-image: url("https://placehold.it/64x64");
- height: 64px;
- width: 64px;
- float: left;
- border-radius: 50%;
-}
+//LimeGreen MediumSeaGreen Olive 
 
 .media-headline{
 	font-family: Copperplate;
 	height: 64px;
 	overflow: hidden;
+	margin-left: 5em;
 }
+
 
 .media-byline {
 	border: 1px dashed black;
 	border-radius: 5px;
+	background-color: darken(MediumSeaGreen,15%);
+
 }
 .media-byline__time{
 	font-family: impact;
 	font-weight: bold;
-
+	color: white;
 }
 .media-byline__author{
 	font-family: 'Lucida Console';
 	font-style: italic;
 	font-weight: bold;
 	// margin-left: 20px;
+	color: lighten(silver,15%);
 }
 
 .description {
@@ -48,6 +72,20 @@
 	overflow-y: scroll;
 }
 
+body {
+	font-size: 12px;
+	@media screen and (max-width:1200px) and (min-width:992px) {
+		font-size: 10px;
+	}
+
+	@media screen and (max-width: 991px) and (min-width: 768px)
+	{
+		font-size: 7px
+	}
+	@media screen and (max-width: 768px){
+		font-size: 14px;
+	}
+}
 
 html {
 	box-sizing: border-box;
@@ -68,3 +106,25 @@ html {
 *:before {
 	box-sizing: inherit;
 }
+/* loading animations from http://cssload.net/ 
+---start------------------------------------*/
+@import "load-animations";
+/* http://cssload.net/  */
+@import "spinner";
+/* loading animations from http://cssload.net/ 
+----end--------------*/
+
+/*
+
+						<div class="cssload-thecube pull-left">
+	<div class="cssload-cube cssload-c1"></div>
+	<div class="cssload-cube cssload-c2"></div>
+	<div class="cssload-cube cssload-c4"></div>
+	<div class="cssload-cube cssload-c3"></div>
+</div>
+
+<div class="cssload-container">
+	<div class="cssload-zenith"></div>
+</div>
+
+*/

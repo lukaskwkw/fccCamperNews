@@ -1,34 +1,81 @@
 
-.item {
-	// display: inline-block;
+body {
+
+  background: #b5bdc8;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */	background-image: url("../images/loadbackground.jpg");
+
+	background-attachment: fixed;
 }
 
-.container {
-	margin-top: 50px;
-}
 
-.red--hearth {
+.red {
 	color:red;
+}
+
+.orange {
+	color:#F79A0C;
+}
+
+.col-xs-12 {
+	margin-top: 20px;
+}
+
+.wrap-load {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1000;
+	  background: #b5bdc8;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.cssload-thecube
+{
+  position: absolute;
+  top: 15%;
+}
+
+.media-image{
+	width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .media-head{
 	border: 1px solid black;
-	border-radius: 12px 2px 2px 3px;
-	background-color: MediumSeaGreen;
+	// border-radius: 12px 2px 2px 3px;
+	// background-color: MediumSeaGreen;
+	background-image: url("../images/noise.png");
+    background-color: whitesmoke;
+
 }
-.cssload-container
-{
-	// overflow:hidden;
-	position: absolute;
-	left: 32px;
-	top: 12px;
-}
+
+
+
 .media-left{
- background-image: url("https://placehold.it/48x48");
+ // background-image: url("https://placehold.it/48x48");
  background-size: cover;
- border-radius: 50%;
+ // border-radius: 50%;
  margin-top: 1em;
- margin-left: 1em;
+ // margin-left: 1em;
  height: 48px;
  width: 48px;
  float: left;
@@ -40,63 +87,57 @@
 
 .media-headline{
 	font-family: Copperplate;
-	height: 64px;
+	// height: 64px;
+	padding-right: 8px;
 	overflow: hidden;
 	margin-left: 5em;
+	h4 {
+	margin-left: 50px;
+    margin-top: 24px;
+	}
 }
 
 
 .media-byline {
-	border: 1px dashed black;
-	border-radius: 5px;
-	background-color: darken(MediumSeaGreen,15%);
-
+	// border: 1px dashed black;
+	// border-radius: 5px;
+	margin-left: 8%;
+	color: black;
 }
 .media-byline__time{
-	font-family: impact;
-	font-weight: bold;
-	color: white;
+	// font-family: impact;
+	// font-weight: bold;
+	  font-family: Tahoma;
 }
 .media-byline__author{
 	font-family: 'Lucida Console';
 	font-style: italic;
 	font-weight: bold;
-	// margin-left: 20px;
-	color: lighten(silver,15%);
+	color: brown;
 }
 
 .description {
 	margin-top: 5px;
 	font-family: Georgia, Serif;
 	max-height: 100px;
+	// margin-left: 10%;
 	overflow-y: scroll;
+	background-image: url("../images/paper.png");
+	// display: none;
 }
 
-body {
-	font-size: 12px;
-	@media screen and (max-width:1200px) and (min-width:992px) {
-		font-size: 10px;
-	}
 
-	@media screen and (max-width: 991px) and (min-width: 768px)
-	{
-		font-size: 7px
-	}
-	@media screen and (max-width: 768px){
-		font-size: 14px;
-	}
-}
 
 html {
 	box-sizing: border-box;
 }
 
-*::-webkit-scrollbar {
+.description::-webkit-scrollbar {
     width: .5em;
 }
  
  
-*::-webkit-scrollbar-thumb {
+.description::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
@@ -110,7 +151,7 @@ html {
 ---start------------------------------------*/
 @import "load-animations";
 /* http://cssload.net/  */
-@import "spinner";
+// @import "spinner";
 /* loading animations from http://cssload.net/ 
 ----end--------------*/
 
